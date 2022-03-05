@@ -1,0 +1,71 @@
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: Pacifico;
+    }
+
+    body {
+        margin: 0;
+        background-color: rgb(36, 36, 36);
+        color: whitesmoke;
+    }
+
+    textarea { 
+        resize: none;
+    }
+}
+
+@layer components{
+
+    .timertypebtn {
+        @apply bg-transparent w-32 opacity-40
+        text-[#ffffffd7] border-2 rounded-md mx-2 h-8
+        hover:bg-yellow-700 
+        
+    }
+
+    .activetimertype {
+        @apply timertypebtn border-black opacity-100 text-black
+        w-32 shadow-lg
+    }
+
+    .timertext {
+        @apply text-[1em] 
+        w-32 h-32
+    }
+
+    .timerbtn {
+        @apply w-max h-max p-2 self-center rounded-md opacity-70
+        bg-green-600
+        hover:bg-red-600
+    }
+
+    .activetimerbtn {
+        @apply timerbtn  text-black
+        bg-red-700 px-5 aspect-video
+    }
+
+    .taskbtn {
+        @apply justify-self-end p-1 rounded-tr-[1em]
+        hover:bg-red-600
+    }
+
+    .tasknotdone {
+        @apply h-12 aspect-square bg-yellow-300 rounded-tl-[1em]
+    }
+
+    .taskdone {
+        @apply tasknotdone bg-green-700
+    }
+
+    .taskTextArea {
+        @apply bg-transparent
+    }
+}
