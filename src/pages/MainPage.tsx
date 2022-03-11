@@ -16,7 +16,7 @@ const MainPage = () => {
     return(
         <div className="flex flex-row drop-shadow-xl p-16 h-screen justify-center">
             <div className=" bg-gcolor2 text-center rounded-xl p-2 h-max">
-                <span className="text-[3em]"> Promodo Timer</span>
+                <span className="text-[3em]"> Pomodoro Timer</span>
                 
                 <div className="mt-4">                
                     <button className={`${timetype ===  "1" ? "activetimertype" : "timertypebtn"}`} onClick={() => { changeTimer("1") }}>Session</button>

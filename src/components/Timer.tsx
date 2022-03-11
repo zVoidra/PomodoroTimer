@@ -95,7 +95,7 @@ export default function Timer(props:any) {
             } else {
                 Interval1 = setInterval(() => {
                     setSeconds(seconds - 1)
-                }, 1)
+                }, 1000)
             }
         }
         return () => clearInterval(Interval1)
@@ -112,9 +112,6 @@ export default function Timer(props:any) {
                     { Logseconds() }
                 </span>
             </div>
-
-
-            {/* <span className="timertext">{ minute } : { Logseconds() } </span> */}
 
             <button className={`${timeron ? "activetimerbtn" : "timerbtn"}`} 
             id="startstop" onClick={() => TimerHandle(buttontext)}> { buttontext } </button>
