@@ -24,16 +24,16 @@ export default function Timer(props:any) {
 
         switch (timertype) {
             case "1":
-                setMinute(40)
+                setMinute(25)
                 break;
             case "2":
-                setMinute(10)
+                setMinute(5)
                 break;
             case "3":
                 setMinute(15)
                 break;
             default:
-                setMinute(40)
+                setMinute(25)
         }
         
         setSeconds(0)
